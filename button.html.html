@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 97vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+
+        }
+        #button_box{
+            width: 200px;
+            height: 80px;
+            background-color: rgba(137, 43, 226, 0.68);
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+        #rotating_line{
+            width: 250px;
+            height: 40px;
+            background:linear-gradient(rgba(0, 0, 255, 0.598),green);
+            rotate:-30deg;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        button{
+            position: absolute;
+            width: 194px;
+            height: 75px;
+            border-radius: 100px;
+            margin-top: 2px;
+            border: none;
+            background-color: aquamarine;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Button</h1>
+    <div id="button_box">
+        <div id="rotating_line"</div>
+    </div>
+    <button type="button">click here</button>
+</body>
+</html>
